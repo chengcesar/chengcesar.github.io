@@ -101,14 +101,51 @@ img {
 .hero-column {
     background-color: #ffffff;
     min-height: 200px;
+    height: fit-content;
     border: 1px dashed rgba(245, 230, 230, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-frame {
+    border: 1px dashed rgba(245, 230, 230, 0.6);
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: fit-content;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: auto;
+}
+
+.hero-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 12px;
+    transition: color 0.2s ease;
+}
+
+.hero-link:hover {
+    color: #666;
+}
+
+.hero-link svg {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .hero-title {
     font-size: 48px;
     font-weight: 400;
     letter-spacing: -0.5px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     line-height: 1.2;
 }
 
@@ -116,6 +153,7 @@ img {
     font-size: 16px;
     line-height: 1.8;
     color: #333;
+    height: fit-content;
 }
 
 /* Project Grid */
