@@ -85,6 +85,38 @@ img {
     font-size: 14px;
     cursor: pointer;
     padding: 10px;
+    position: relative;
+    z-index: 1001;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    gap: 0;
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 999;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 15px 0;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-color);
+    transition: color 0.2s ease;
+}
+
+.mobile-nav a:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav.active {
+    display: flex;
 }
 
 /* Hero Section */
@@ -290,6 +322,14 @@ img {
 
     .mobile-menu-toggle {
         display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.active {
+        display: flex;
     }
 
     .container {

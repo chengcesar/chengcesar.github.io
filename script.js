@@ -70,6 +70,64 @@ if (document.readyState === 'loading') {
     generateProjectGrid();
 }
 
-// Simple mobile menu toggle (if needed)
-// You can add mobile menu functionality here
+// Mobile menu toggle functionality
+function initMobileMenu() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    if (!mobileMenuToggle || !mobileNav) {
+        console.log('Mobile menu elements not found');
+        return;
+    }
+
+    // Toggle menu on button click
+    mobileMenuToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const isActive = mobileNav.classList.contains('active');
+        
+        if (isActive) {
+            mobileNav.classList.remove('active');
+            const span = this.querySelector('span');
+            if (span) span.textContent = 'Menu';
+        } else {
+            mobileNav.classList.add('active');
+            const span = this.querySelector('span');
+            if (span) span.textContent = 'Close';
+        }
+    });
+
+    // Close menu when clicking on a link
+    mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+            const span = mobileMenuToggle.querySelector('span');
+            if (span) span.textContent = 'Menu';
+        });
+    });
+
+    // Close menu when clicking outside (with slight delay to avoid conflicts)
+    setTimeout(function() {
+        document.addEventListener('click', function(event) {
+            if (!mobileNav.classList.contains('active')) return;
+            
+            const isClickInsideNav = mobileNav.contains(event.target);
+            const isClickOnToggle = mobileMenuToggle.contains(event.target);
+            
+            if (!isClickInsideNav && !isClickOnToggle) {
+                mobileNav.classList.remove('active');
+                const span = mobileMenuToggle.querySelector('span');
+                if (span) span.textContent = 'Menu';
+            }
+        });
+    }, 100);
+}
+
+// Initialize mobile menu when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+    initMobileMenu();
+}
 
