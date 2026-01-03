@@ -135,6 +135,19 @@ img {
     display: block;
 }
 
+.project-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-item:hover .project-cover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
 .placeholder-square {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -148,7 +161,7 @@ img {
     opacity: 0.9;
 }
 
-/* Different colors for each placeholder */
+/* Different colors for each placeholder (used as fallback) */
 .project-item:nth-child(1) .placeholder-square { background-color: #d4d4d4; }
 .project-item:nth-child(2) .placeholder-square { background-color: #c7c7c7; }
 .project-item:nth-child(3) .placeholder-square { background-color: #bababa; }
