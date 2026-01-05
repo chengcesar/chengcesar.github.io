@@ -140,6 +140,31 @@ img {
     gap: 20px;
 }
 
+.hero-column-01 {
+    /* Styles specific to column 01 */
+}
+
+.hero-column-02 {
+    /* Styles specific to column 02 */
+}
+
+.hero-column-03 {
+    /* Styles specific to column 03 */
+}
+
+/* Frame styles within specific columns */
+.hero-column-01 .hero-frame {
+    /* Styles for frames in column 01 */
+}
+
+.hero-column-02 .hero-frame {
+    /* Styles for frames in column 02 */
+}
+
+.hero-column-03 .hero-frame {
+    /* Styles for frames in column 03 */
+}
+
 .hero-frame {
     border: 1px dashed rgba(245, 230, 230, 0.6);
     padding: 0;
@@ -354,8 +379,8 @@ img {
         gap: 0;
     }
 
-    .hero-column:first-child,
-    .hero-column:last-child {
+    .hero-column-01,
+    .hero-column-03 {
         display: none;
     }
 
