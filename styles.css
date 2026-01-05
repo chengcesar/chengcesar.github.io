@@ -133,7 +133,7 @@ img {
 .hero-column {
     background-color: #ffffff;
     min-height: 200px;
-    height: fit-content;
+    height: 100%;
     border: 1px dashed rgba(245, 230, 230, 0.6);
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@ img {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    height: fit-content;
+    height: 150px;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -178,6 +178,15 @@ img {
     font-weight: 400;
     letter-spacing: -0.5px;
     margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.hero-section-title {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
     line-height: 1.2;
 }
 
