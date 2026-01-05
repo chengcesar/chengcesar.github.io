@@ -170,6 +170,19 @@ img {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+    height: fit-content;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: auto;
+}
+.hero-frame-top {
+    border: 1px dashed rgba(245, 230, 230, 0.6);
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
     height: 150px;
     flex: 0 0 auto;
     display: flex;
@@ -183,7 +196,7 @@ img {
     display: block;
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 12px;
     transition: color 0.2s ease;
 }
@@ -207,7 +220,7 @@ img {
 }
 
 .hero-section-title {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-transform: uppercase;
