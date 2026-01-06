@@ -28,14 +28,14 @@ const projectsConfig = [
         id: 'project-04',
         title: 'Project 04',
         description: 'Placeholder description text for project four',
-        coverImage: 'docs/project-04/cover.jpg',
+        coverImage: 'docs/project-04/cover-04.png',
         visible: true
     },
     {
         id: 'project-05',
         title: 'Project 05',
         description: 'Placeholder description text for project five',
-        coverImage: 'docs/project-05/cover.jpg',
+        coverImage: 'docs/project-05/cover-07.png',
         visible: true
     },
     {

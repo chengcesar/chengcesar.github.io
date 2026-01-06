@@ -62,6 +62,18 @@ img {
     align-items: center;
 }
 
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.logo-icon,
+.logo-title {
+    font-weight: bold;
+}
+
 .logo-dot {
     display: inline-block;
     width: 12px;
@@ -187,28 +199,60 @@ img {
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     min-height: auto;
+    color: rgba(0, 17, 200, 1);
 }
 
 .hero-link {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: #333;
     font-size: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
     transition: color 0.2s ease;
+    background-image: url(assets/underline.svg);
+    background-size: 100% 4px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 0.05rem;
 }
 
 .hero-link:hover {
     color: #666;
 }
 
-.hero-link svg {
+.artifact-link {
     display: inline-block;
-    margin-right: 8px;
-    vertical-align: middle;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 0px;
+    transition: color 0.2s ease;
+    background-image: url(assets/underline.svg);
+    background-size: 100% 4px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 0.05rem;
+}
+
+.artifact-link:hover {
+    color: #0011C8;
+}
+
+/* Specific styling for hero-links in artifacts list */
+.hero-column-01 .hero-link:hover,
+.artifacts-list .hero-link:hover {
+    color: #0011C8;
+}
+
+.highlight {
+    transition: color 0.2s ease;
+}
+
+.highlight:hover {
+    color: #0011C8;
 }
 
 .hero-title {
@@ -217,6 +261,7 @@ img {
     letter-spacing: -0.5px;
     margin-bottom: 0;
     line-height: 1.2;
+    color: #000000;
 }
 
 .hero-section-title {
