@@ -39,7 +39,7 @@ const projectsConfig = [
         id: 'project-05',
         title: 'Project 05',
         description: 'Placeholder description text for project five',
-        coverImage: 'docs/project-05/cover-07.png',
+        coverImage: 'docs/project-05/cover-055.png',
         tags: ['UI/UX'],
         visible: true
     },
