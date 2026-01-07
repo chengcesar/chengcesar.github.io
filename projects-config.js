@@ -8,6 +8,7 @@ const projectsConfig = [
         title: 'Project 01',
         description: 'Placeholder description text for project one',
         coverImage: 'docs/project-01/cover.png', // Falls back to cover.svg if PNG doesn't exist
+        tags: ['UI/UX', 'Architecture'],
         visible: true
     },
     {
@@ -15,6 +16,7 @@ const projectsConfig = [
         title: 'Project 02',
         description: 'Placeholder description text for project two',
         coverImage: 'docs/project-02/cover-02.png',
+        tags: ['Pattern Language'],
         visible: true
     },
     {
@@ -22,6 +24,7 @@ const projectsConfig = [
         title: 'Project 03',
         description: 'Placeholder description text for project three',
         coverImage: 'docs/project-03/cover-05.png',
+        tags: ['Graph Experiments', 'UI/UX'],
         visible: true
     },
     {
@@ -29,6 +32,7 @@ const projectsConfig = [
         title: 'Project 04',
         description: 'Placeholder description text for project four',
         coverImage: 'docs/project-04/cover-04.png',
+        tags: ['Architecture'],
         visible: true
     },
     {
@@ -36,6 +40,7 @@ const projectsConfig = [
         title: 'Project 05',
         description: 'Placeholder description text for project five',
         coverImage: 'docs/project-05/cover-07.png',
+        tags: ['UI/UX'],
         visible: true
     },
     {
@@ -43,6 +48,7 @@ const projectsConfig = [
         title: 'Project 06',
         description: 'Placeholder description text for project six',
         coverImage: 'docs/project-06/cover.jpg',
+        tags: ['Graph Experiments'],
         visible: true
     },
     {
@@ -50,6 +56,7 @@ const projectsConfig = [
         title: 'Project 07',
         description: 'Placeholder description text for project seven',
         coverImage: 'docs/project-07/cover.jpg',
+        tags: ['Pattern Language', 'Architecture'],
         visible: true
     },
     {
@@ -57,6 +64,7 @@ const projectsConfig = [
         title: 'Project 08',
         description: 'Placeholder description text for project eight',
         coverImage: 'docs/project-08/cover.jpg',
+        tags: ['UI/UX', 'Graph Experiments'],
         visible: true
     },
     {
@@ -64,6 +72,7 @@ const projectsConfig = [
         title: 'Project 09',
         description: 'Placeholder description text for project nine',
         coverImage: 'docs/project-09/cover.jpg',
+        tags: ['Architecture'],
         visible: true
     },
     {
@@ -71,6 +80,7 @@ const projectsConfig = [
         title: 'Project 10',
         description: 'Placeholder description text for project ten',
         coverImage: 'docs/project-10/cover.jpg',
+        tags: ['Pattern Language'],
         visible: true
     },
     {
@@ -78,6 +88,7 @@ const projectsConfig = [
         title: 'Project 11',
         description: 'Placeholder description text for project eleven',
         coverImage: 'docs/project-11/cover.jpg',
+        tags: ['UI/UX', 'Architecture', 'Graph Experiments'],
         visible: true
     },
     {
@@ -85,6 +96,7 @@ const projectsConfig = [
         title: 'Project 12',
         description: 'Placeholder description text for project twelve',
         coverImage: 'docs/project-12/cover.jpg',
+        tags: ['Graph Experiments'],
         visible: true
     },
     
@@ -106,6 +118,7 @@ const projectsConfig = [
     //     title: 'Your Project Title',
     //     description: 'Your project description',
     //     coverImage: 'docs/project-XX/cover.jpg', // or .png, .svg
+    //     tags: ['UI/UX', 'Architecture'], // Array of tag strings matching tags in artifacts-config.js
     //     visible: true
     // },
 ];
