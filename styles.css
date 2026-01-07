@@ -65,7 +65,7 @@ img {
 .logo {
     display: inline-flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     font-weight: bold;
 }
 
@@ -241,10 +241,124 @@ img {
     color: #0011C8;
 }
 
+/* Artifacts list styling */
+.artifacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 8px;
+}
+
 /* Specific styling for hero-links in artifacts list */
 .hero-column-01 .hero-link:hover,
 .artifacts-list .hero-link:hover {
     color: #0011C8;
+}
+
+/* Tag filter styling */
+.artifacts-list .hero-link.tag-filter {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.artifacts-list .hero-link.tag-filter .tag-filter-dot {
+    flex-shrink: 0;
+    display: none;
+}
+
+.artifacts-list .hero-link.tag-filter .tag-filter-dot.visible {
+    display: block;
+}
+
+.artifacts-list .hero-link.tag-filter.active {
+    color: #0011C8;
+    font-weight: 500;
+    background-image: url(assets/tag-selected-background.svg);
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 2px 4px;
+}
+
+/* Artifacts Table */
+.artifacts-table {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.artifacts-table-content {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.artifacts-table-content thead {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.artifacts-table-content th {
+    padding: 15px 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.artifacts-table-content td {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.artifacts-table-content tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.artifacts-table-content tbody tr {
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.artifacts-table-content tbody tr:hover {
+    background-color: #f8f8f8;
+}
+
+.artifacts-table-content tbody tr:hover .artifact-link {
+    color: #0011C8;
+}
+
+.artifacts-table-content td:first-child {
+    width: 40%;
+}
+
+.artifacts-table-content td:nth-child(2) {
+    color: #666;
+    font-size: 14px;
+}
+
+.artifacts-table-content .arrow-cell {
+    width: 50px;
+    text-align: right;
+    color: #0011C8;
+    font-size: 18px;
+    padding-right: 20px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.artifacts-table-content tbody tr:hover .arrow-cell {
+    opacity: 1;
+}
+
+.artifacts-table-footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
 }
 
 .highlight {
