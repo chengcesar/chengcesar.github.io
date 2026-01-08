@@ -134,22 +134,57 @@ img {
 /* Hero Section */
 .hero {
     padding: 10px 0 50px;
+    position: relative;
+}
+
+.hero-background-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: none;
+    pointer-events: auto;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
 }
 
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    pointer-events: none;
 }
 
 .hero-column {
-    background-color: #ffffff;
+    background-color: #ffffff2f;
     min-height: 200px;
     height: 100%;
-    border: 1px dashed rgba(245, 230, 230, 0.6);
+    /* border: 1px dashed rgba(245, 230, 230, 0.6); */
     display: flex;
     flex-direction: column;
     gap: 20px;
+    pointer-events: none;
+}
+
+.hero-column * {
+    pointer-events: none;
+}
+
+/* Re-enable pointer events for interactive elements */
+.hero-column a,
+.hero-column button,
+.hero-column .hero-link,
+.hero-column .artifact-link,
+.hero-column .tag-filter,
+.hero-column .artifacts-list a,
+.hero-column .highlight {
+    pointer-events: auto;
 }
 
 .hero-column-01 {
@@ -162,6 +197,7 @@ img {
 
 .hero-column-03 {
     /* Styles specific to column 03 */
+    background-color: transparent;
 }
 
 /* Frame styles within specific columns */
@@ -178,7 +214,7 @@ img {
 }
 
 .hero-frame {
-    border: 1px dashed rgba(245, 230, 230, 0.6);
+    /* border: 1px dashed rgba(245, 230, 230, 0.6); */
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -191,7 +227,7 @@ img {
     min-height: auto;
 }
 .hero-frame-top {
-    border: 1px dashed rgba(245, 230, 230, 0.6);
+    /* border: 1px dashed rgba(245, 230, 230, 0.6); */
     padding: 0;
     margin-left: 0;
     margin-right: 0;
@@ -275,9 +311,9 @@ img {
     color: #0011C8;
     font-weight: 500;
     background-image: url(assets/tag-selected-background.svg);
-    background-size: 100% auto;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-size: 100% 6px;
+    background-position: bottom;
     padding: 2px 4px;
 }
 
