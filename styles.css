@@ -154,6 +154,13 @@ img {
     pointer-events: none;
 }
 
+.hero .container .artifacts-table,
+.hero .container .artifacts-table *,
+.hero .container .artifacts-table-content,
+.hero .container .artifacts-table-content * {
+    pointer-events: auto;
+}
+
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
