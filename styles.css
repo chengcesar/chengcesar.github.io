@@ -154,6 +154,13 @@ img {
     pointer-events: none;
 }
 
+.hero .container .artifacts-table,
+.hero .container .artifacts-table *,
+.hero .container .artifacts-table-content,
+.hero .container .artifacts-table-content * {
+    pointer-events: auto;
+}
+
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -184,6 +191,14 @@ img {
 .hero-column .tag-filter,
 .hero-column .artifacts-list a,
 .hero-column .highlight {
+    pointer-events: auto;
+}
+
+/* Re-enable pointer events for SVG elements inside interactive elements */
+.hero-column a svg,
+.hero-column a *,
+.hero-column .tag-filter svg,
+.hero-column .tag-filter * {
     pointer-events: auto;
 }
 
