@@ -194,6 +194,14 @@ img {
     pointer-events: auto;
 }
 
+/* Re-enable pointer events for SVG elements inside interactive elements */
+.hero-column a svg,
+.hero-column a *,
+.hero-column .tag-filter svg,
+.hero-column .tag-filter * {
+    pointer-events: auto;
+}
+
 .hero-column-01 {
     /* Styles specific to column 01 */
 }
