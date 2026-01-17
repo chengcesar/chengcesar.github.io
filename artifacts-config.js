@@ -15,7 +15,7 @@ const artifactsConfig = {
         {
             id: 'vacancy-calculator',
             title: 'Vacancy Calculator',
-            url: '#',
+            url: 'https://chengcesar.github.io/081-rent-vacancy-calculator/',
             tags: ['Finance'],
             visible: true
         },
