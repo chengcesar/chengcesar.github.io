@@ -166,17 +166,18 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     pointer-events: none;
+    align-items: start;
 }
 
 .hero-column {
     background-color: #ffffff2f;
     min-height: 200px;
-    height: 100%;
     /* border: 1px dashed rgba(245, 230, 230, 0.6); */
     display: flex;
     flex-direction: column;
     gap: 20px;
     pointer-events: none;
+    height: auto;
 }
 
 .hero-column * {
@@ -215,6 +216,34 @@ img {
     background-color: transparent;
 }
 
+/* Contact page specific layout */
+.contact-page .hero-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.contact-page .hero-column-01 {
+    grid-column: 1;
+    align-items: flex-start;
+}
+
+.contact-page .hero-column-01 .hero-frame-top {
+    margin-top: auto;
+}
+
+.contact-page .hero-column-01 .hero-frame-top .hero-title {
+    margin-bottom: 40px;
+}
+
+.contact-page .hero-column-02 {
+    display: none;
+}
+
+.contact-page .hero-column-03 {
+    grid-column: 2;
+}
+
 /* Frame styles within specific columns */
 .hero-column-01 .hero-frame {
     /* Styles for frames in column 01 */
@@ -226,6 +255,10 @@ img {
 
 .hero-column-03 .hero-frame {
     /* Styles for frames in column 03 */
+}
+
+.hero-column-03 .hero-frame-top {
+    justify-content: flex-start;
 }
 
 .hero-frame {
@@ -246,13 +279,13 @@ img {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    height: 150px;
+    min-height: 150px;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    min-height: auto;
+    height: auto;
     color: rgba(0, 17, 200, 1);
 }
 
@@ -528,6 +561,25 @@ img {
     opacity: 1;
 }
 
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-content {
+    max-width: 600px;
+}
+
+.contact-links {
+    margin-top: 40px;
+}
+
+.contact-links p {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+}
+
 /* Footer/Contact */
 .footer {
     padding: 80px 0 60px;
@@ -651,3 +703,10 @@ img {
         gap: 20px;
     }
 }
+
+blockquote {
+    border-left: 4px solid #3b82f6; /* blue line */
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #374151;
+  }

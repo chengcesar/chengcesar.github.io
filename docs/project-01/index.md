@@ -2,9 +2,14 @@
 
 A comprehensive urban planning dashboard that enables city planners to visualize and analyze demographic data, transportation networks, and zoning regulations in real-time.
 
+<div class="img-placeholder-1col">
+<!-- <img src="docs/project-01/600x600-2.gif" alt="Project overview"> -->
+</div>
+
 ## Overview
 
 This project addresses the critical need for accessible urban analytics tools in modern city planning. Built using React and D3.js, the dashboard provides interactive visualizations that help planners make data-driven decisions.
+
 
 ## Key Features
 
@@ -20,7 +25,15 @@ This project addresses the critical need for accessible urban analytics tools in
 - Database: PostgreSQL
 - Mapping: Mapbox GL JS
 
+<div class="img-placeholder-2col">
+<img src= "docs/project-01/project-03.png" alt="Technology visualization 1">
+<img src=  "docs/project-01/project-03.png" alt="Technology visualization 2">
+</div>
+
 ## Results
 
 Since launch, the tool has been adopted by 15+ city planning departments, reducing planning analysis time by 60% and improving public engagement through transparent data visualization.
 
+
+> **From the abstract:**  
+> Analyzing 9000 urban areas’ street networks…

@@ -43,3 +43,46 @@ You can use standard Markdown syntax:
 - Tables
 - Blockquotes
 
+## Image Placeholders
+
+You can add placeholder images between sections with 1-column or 2-column layouts using HTML (which is supported in Markdown):
+
+### 1-Column Layout
+
+Insert a single full-width image:
+
+```html
+<div class="img-placeholder-1col">
+<img src="../../assets/gallery-placeholder.svg" alt="Description">
+</div>
+```
+
+Or use your own image:
+
+```html
+<div class="img-placeholder-1col">
+<img src="path/to/your/image.jpg" alt="Description">
+</div>
+```
+
+### 2-Column Layout
+
+Insert two images side by side (automatically stacks on mobile):
+
+```html
+<div class="img-placeholder-2col">
+<img src="../../assets/gallery-placeholder.svg" alt="Description 1">
+<img src="../../assets/gallery-placeholder.svg" alt="Description 2">
+</div>
+```
+
+Or use your own images:
+
+```html
+<div class="img-placeholder-2col">
+<img src="path/to/image1.jpg" alt="Description 1">
+<img src="path/to/image2.jpg" alt="Description 2">
+</div>
+```
+
+**Note:** When using images from your project folder, use relative paths like `cover.png` or `images/photo.jpg` instead of `../../assets/`.
