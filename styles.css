@@ -624,6 +624,12 @@ img {
     .footer {
         padding: 60px 0 40px;
     }
+
+    /* Hide Tags column on mobile */
+    .artifacts-table-content th:nth-child(2),
+    .artifacts-table-content td:nth-child(2) {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
