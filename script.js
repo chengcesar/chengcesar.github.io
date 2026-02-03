@@ -340,3 +340,74 @@ if (document.readyState === 'loading') {
     initMobileMenu();
 }
 
+// Typewriter animation
+function initTypewriter() {
+    const typewriterElement = document.querySelector('.typewriter');
+    if (!typewriterElement) return;
+
+    // Array of locations to cycle through
+    const locations = [
+        'Bogota',
+        'Colombia',
+        // 'New York',
+        // 'Tokyo',
+        // 'London',
+        // 'Berlin',
+        // 'Barcelona'
+    ];
+
+    let locationIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let isPaused = false;
+
+    function type() {
+        const currentLocation = locations[locationIndex];
+
+        // If we're paused (after completing a word), wait before deleting
+        if (isPaused) {
+            isPaused = false;
+            setTimeout(type, 2000); // Pause for 2 seconds before deleting
+            return;
+        }
+
+        // Deleting characters
+        if (isDeleting) {
+            typewriterElement.textContent = currentLocation.substring(0, charIndex - 1);
+            charIndex--;
+
+            // If we've deleted all characters
+            if (charIndex === 0) {
+                isDeleting = false;
+                locationIndex = (locationIndex + 1) % locations.length; // Move to next location
+                setTimeout(type, 500); // Pause before typing next word
+            } else {
+                setTimeout(type, 50); // Speed of deleting
+            }
+        }
+        // Typing characters
+        else {
+            typewriterElement.textContent = currentLocation.substring(0, charIndex + 1);
+            charIndex++;
+
+            // If we've typed the complete word
+            if (charIndex === currentLocation.length) {
+                isDeleting = true;
+                isPaused = true;
+                setTimeout(type, 100); // Small delay before triggering the pause
+            } else {
+                setTimeout(type, 100); // Speed of typing
+            }
+        }
+    }
+
+    // Start the animation after a short delay
+    setTimeout(type, 500);
+}
+
+// Initialize typewriter when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTypewriter);
+} else {
+    initTypewriter();
+}
