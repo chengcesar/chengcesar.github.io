@@ -131,6 +131,30 @@ img {
     display: flex;
 }
 
+/* CV Download Section */
+.cv-download-section {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cv-download-link {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-image: url(assets/underline.svg);
+    background-size: 100% 4px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 0.05rem;
+}
+
+.cv-download-link:hover {
+    color: #0011C8;
+}
+
 /* Hero Section */
 .hero {
     padding: 10px 0 50px;
