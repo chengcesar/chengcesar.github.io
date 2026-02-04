@@ -356,6 +356,15 @@ function initTypewriter() {
         // 'Barcelona'
     ];
 
+    // Check if mobile device (screen width <= 768px)
+    const isMobile = window.innerWidth <= 768;
+    
+    // On mobile, show static text with first city and don't run animation
+    if (isMobile) {
+        typewriterElement.textContent = locations[0];
+        return;
+    }
+
     let locationIndex = 0;
     let charIndex = 0;
     let isDeleting = false;

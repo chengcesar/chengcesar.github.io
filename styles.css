@@ -134,7 +134,6 @@ img {
 /* CV Download Section */
 .cv-download-section {
     padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
 }
 
 .cv-download-link {
@@ -153,6 +152,38 @@ img {
 
 .cv-download-link:hover {
     color: #0011C8;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 20px;
+}
+
+.about-column {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.about-column p {
+    margin-bottom: 20px;
+}
+
+.about-column p:last-child {
+    margin-bottom: 0;
+}
+
+.placeholder-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #e1e1e1;
 }
 
 /* Tooltip for CV Download Links */
@@ -728,6 +759,10 @@ img {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
     }
+
+    .about-grid {
+        grid-template-columns: 1fr 350px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -803,6 +838,20 @@ img {
     /* Hide Tags column on mobile */
     .artifacts-table-content th:nth-child(2),
     .artifacts-table-content td:nth-child(2) {
+        display: none;
+    }
+
+    /* About section responsive */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-section {
+        padding: 30px 0;
+    }
+
+    .about-column-image {
         display: none;
     }
 }
