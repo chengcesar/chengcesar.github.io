@@ -411,3 +411,43 @@ if (document.readyState === 'loading') {
 } else {
     initTypewriter();
 }
+
+// Email Copy to Clipboard Functionality
+function initEmailCopy() {
+    const emailCopyLink = document.querySelector('.email-copy-link');
+    
+    if (emailCopyLink) {
+        emailCopyLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const email = this.getAttribute('data-email');
+            const tooltip = this.querySelector('.copy-tooltip');
+            
+            // Copy to clipboard
+            navigator.clipboard.writeText(email).then(() => {
+                // Change tooltip text
+                tooltip.textContent = 'copied!';
+                tooltip.classList.add('copied');
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    tooltip.textContent = 'copy';
+                    tooltip.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy email:', err);
+                tooltip.textContent = 'failed';
+                setTimeout(() => {
+                    tooltip.textContent = 'copy';
+                }, 2000);
+            });
+        });
+    }
+}
+
+// Initialize email copy when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initEmailCopy);
+} else {
+    initEmailCopy();
+}
