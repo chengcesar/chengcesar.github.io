@@ -47,7 +47,7 @@ const projectsConfig = [
         id: 'project-06',
         title: 'Project 06',
         description: 'Placeholder description text for project six',
-        coverImage: 'docs/project-06/cover-06.png',
+        coverImage: 'docs/project-06/Cover-UI.png',
         tags: ['Graph Experiments'],
         visible: true
     },
@@ -63,7 +63,7 @@ const projectsConfig = [
         id: 'project-08',
         title: 'Project 08',
         description: 'Placeholder description text for project eight',
-        coverImage: 'docs/project-08/cover.jpg',
+        coverImage: 'docs/project-08/Cover-Marino.png',
         tags: ['UI/UX', 'Graph Experiments'],
         visible: true
     },
@@ -71,7 +71,7 @@ const projectsConfig = [
         id: 'project-09',
         title: 'Project 09',
         description: 'Placeholder description text for project nine',
-        coverImage: 'docs/project-09/cover.jpg',
+        coverImage: 'docs/project-09/Cover-flano.png',
         tags: ['Architecture'],
         visible: true
     },

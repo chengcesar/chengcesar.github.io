@@ -21,7 +21,7 @@ const artifactsConfig = {
         },
         {
             id: 'item-02',
-            title: 'Item 02',
+            title: 'Graph Viewer',
             url: '#',
             tags: ['Operations'],
             visible: true

@@ -1,22 +1,52 @@
-# Project 01
+# Beyond Optimization
 
-A comprehensive urban planning dashboard that enables city planners to visualize and analyze demographic data, transportation networks, and zoning regulations in real-time.
+
 
 <div class="img-placeholder-1col">
-<!-- <img src="docs/project-01/600x600-2.gif" alt="Project overview"> -->
+<!-- <img src="docs/project-01/cover.png" alt="Project overview"> -->
 </div>
 
 ## Overview
 
-This project addresses the critical need for accessible urban analytics tools in modern city planning. Built using React and D3.js, the dashboard provides interactive visualizations that help planners make data-driven decisions.
+This project explores shape grammars and population-based thinking through a series of computational design sketches that generate 2D geometric configurations. 
+
+This work part of an ongoing exploration where I aim to reframe  **generative design** beyond optimization-driven paradigms. Rather than treating design as a search-optimization problem defined by fitness or objective functions, I am interested in more open-ended, stochastic processes that frame design as an exploration of possibility space. 
+
+## Why Optimization Misses the Point
+
+Most generative systems today rely on optimization: a fitness function, an objective, a definition of success. But optimization assumes something crucial—that we already know what we’re optimizing for. 
+
+This exploration intentionally avoids fitness functions and predefined objectives. Instead of identifying optimal solutions, the system examines the generative capacity of rule-based grammars to produce diverse populations of forms. The focus shifts from individual outcomes to the structural and relational properties of the population as a whole —not problem solving but exploratory inquiry.
+
+I explore this question in more depth in a longer ->  <a href="#" class="medium-link">Medium article.</a> 
+
+## Key Ideas Explored
+
+- **Population Thinking (Ernst Mayr)** — Variation as a fundamental condition rather than deviation from an ideal
+- **Pattern Thinking (Buckminster Fuller)** — Recurring structural patterns across scales and contexts
+- **Potentiality vs. Actualization (Aristotle)** — Forms as carriers of latent capacities activated by context
+- **Information Entropy (Claude Shannon)** — Diversity measured as informational richness; high-entropy populations preserve optionality and future relevance
 
 
-## Key Features
+<div class="img-placeholder-2col">
+<img src= "docs/project-01/project-03.png" alt="Technology visualization 1">
+<img src=  "docs/project-01/project-03.png" alt="Technology visualization 2">
+</div>
 
-- **Real-time Data Visualization**: Interactive maps and charts that update as data changes
-- **Multi-layered Analysis**: Overlay demographic, transportation, and zoning data
-- **Export Capabilities**: Generate reports in PDF and CSV formats
-- **Collaborative Workspace**: Multiple users can work on the same project simultaneously
+## Method
+
+Rule-based shape grammars generate diverse populations of geometric forms. No fitness functions or performance metrics are applied. The focus is on population structure, entropy, and emergent relevance rather than convergence.
+
+## Closing Thoughts
+
+This project proposes an alternative computational design mindset:
+
+- from solutions to populations
+- from performance to potential
+- from form-making to condition-setting
+
+It establishes a foundation for open-ended generative systems where relevance emerges through context rather than optimization.
+
 
 ## Technology Stack
 
@@ -24,16 +54,6 @@ This project addresses the critical need for accessible urban analytics tools in
 - Backend: Node.js, Express
 - Database: PostgreSQL
 - Mapping: Mapbox GL JS
-
-<div class="img-placeholder-2col">
-<img src= "docs/project-01/project-03.png" alt="Technology visualization 1">
-<img src=  "docs/project-01/project-03.png" alt="Technology visualization 2">
-</div>
-
-## Results
-
-Since launch, the tool has been adopted by 15+ city planning departments, reducing planning analysis time by 60% and improving public engagement through transparent data visualization.
-
 
 > **From the abstract:**  
 > Analyzing 9000 urban areas’ street networks…

@@ -84,6 +84,14 @@
     color: var(--hover-color);
 }
 
+.project-content .medium-link {
+    text-decoration: none;
+}
+
+.project-content .medium-link:hover {
+    color: #0011C8;
+}
+
 .project-content code {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 14px;
