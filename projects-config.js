@@ -5,10 +5,10 @@
 const projectsConfig = [
     {
         id: 'project-01',
-        title: 'Project 01',
-        description: 'Placeholder description text for project one',
+        title: 'Beyond Optimization',
+        description: 'Shape Grammars and Population-Thinking',
         coverImage: 'docs/project-01/cover.png', // Falls back to cover.svg if PNG doesn't exist
-        tags: ['UI/UX', 'Architecture'],
+        tags: ['Pattern Language', 'Architecture'],
         visible: true
     },
     {

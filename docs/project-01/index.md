@@ -3,7 +3,7 @@
 
 
 <div class="img-placeholder-1col">
-<!-- <img src="docs/project-01/cover.png" alt="Project overview"> -->
+<img src="docs/project-01/ShapeGrammar 06.png" alt="Project overview">
 </div>
 
 ## Overview
@@ -18,7 +18,12 @@ Most generative systems today rely on optimization: a fitness function, an objec
 
 This exploration intentionally avoids fitness functions and predefined objectives. Instead of identifying optimal solutions, the system examines the generative capacity of rule-based grammars to produce diverse populations of forms. The focus shifts from individual outcomes to the structural and relational properties of the population as a whole —not problem solving but exploratory inquiry.
 
-I explore this question in more depth in a longer ->  <a href="#" class="medium-link">Medium article.</a> 
+I explore this question in more depth in a longer ->  <a href="https://medium.com/@cheng.cesar/beyond-optimization-628db9319a34?postPublishedType=repub" 
+class="medium-link">Medium article.</a> 
+
+<div class="img-placeholder-1col">
+<img src="docs/project-01/ShapeGrammar 05.png" alt="Project overview">
+</div>
 
 ## Key Ideas Explored
 
@@ -27,15 +32,24 @@ I explore this question in more depth in a longer ->  <a href="#" class="medium-
 - **Potentiality vs. Actualization (Aristotle)** — Forms as carriers of latent capacities activated by context
 - **Information Entropy (Claude Shannon)** — Diversity measured as informational richness; high-entropy populations preserve optionality and future relevance
 
+<div class="img-placeholder-1col">
+<img src="docs/project-01/ShapeGrammar 07.png" alt="Project overview">
+</div>
+
 
 <div class="img-placeholder-2col">
-<img src= "docs/project-01/project-03.png" alt="Technology visualization 1">
-<img src=  "docs/project-01/project-03.png" alt="Technology visualization 2">
+<img src= "docs/project-01/ShapeGrammar 03.png" alt="Technology visualization 1">
+<img src=  "docs/project-01/ShapeGrammar 04.png" alt="Technology visualization 2">
 </div>
 
 ## Method
 
 Rule-based shape grammars generate diverse populations of geometric forms. No fitness functions or performance metrics are applied. The focus is on population structure, entropy, and emergent relevance rather than convergence.
+
+<div class="img-placeholder-1col">
+<img src="docs/project-01/ShapeGrammar 09.png" alt="Project overview">
+</div>
+
 
 ## Closing Thoughts
 
