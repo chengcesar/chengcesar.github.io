@@ -62,7 +62,7 @@ This project proposes an alternative computational design mindset:
 It establishes a foundation for open-ended generative systems where relevance emerges through context rather than optimization.
 
 
-## Technology Stack
+<!-- ## Technology Stack
 
 - Frontend: React, TypeScript, D3.js
 - Backend: Node.js, Express
@@ -70,4 +70,4 @@ It establishes a foundation for open-ended generative systems where relevance em
 - Mapping: Mapbox GL JS
 
 > **From the abstract:**  
-> Analyzing 9000 urban areas’ street networks…
+> Analyzing 9000 urban areas’ street networks… -->
